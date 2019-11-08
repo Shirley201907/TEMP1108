@@ -1,0 +1,525 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <title>singlepage!</title>
+    <style> 
+         .bg-cover{
+        
+          background-repeat: no-repeat;
+        
+          background-position: center center;
+          -webkit-background-size: cover;
+          background-size: cover;
+          background-attachment: fixed;
+
+         }
+          @media(max-width: 767px){
+                  .container-p{
+                   color: white;
+             }
+         }
+    </style>
+
+  </head>
+  <body>
+	<section class="bg-secondary text-right text-white">
+	     <div class="container">	
+	       <i class="fab fa-facebook"></i>
+	       <i class="fab fa-twitter-square"></i>
+	     </div>
+    </section>
+
+  <!-- navbar -->
+  <section class="bg-dark">
+    <div class="container"> </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Paradise</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Anything you can write down
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">About what you think</a>
+          <a class="dropdown-item" href="#">About how do you feel</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+
+      <div>
+          <a href="#" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#loginModal">Login</a>
+          <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#registerModal">Register</a>
+      </div>
+  </div>
+</nav> 
+</section>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success">
+        <h5 class="modal-title" id="exampleModalLabel">會員登入</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="Username">帳號</label>
+        <input type="text" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="請輸入姓名!!">
+      </div>
+      <div class="form-group">
+        <label for="Username">密碼</label>
+        <input type="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="請輸入密碼!!">
+      </div>            
+    </form>
+      </div>
+      <div class="modal-footer d-flex">
+        <a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal" class="mr-auto">註冊新帳號</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">確認</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" >
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title text-white" id="exampleModalLabel">會員註冊</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>會員條款</h1>
+            <p>1.back home with a piece of leave and a seed in pocket</p>
+            <p>2.back home with a piece of leave and a seed in pocket</p>
+            <p>3.back home with a piece of leave and a seed in pocket</p>
+            <p>4.back home with a piece of leave and a seed in pocket</p>
+            <p>5.back home with a piece of leave and a seed in pocket</p>
+          </div>
+          <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="Username">帳號</label>
+            <input type="text" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="請輸入姓名!!">
+          </div>
+          <div class="form-group">
+            <label for="password">密碼</label>
+            <input type="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="請輸入密碼!!">
+          </div>
+          <div class="form-group">
+            <label for="repassword">確認密碼</label>
+            <input type="password" class="form-control" id="repassword" aria-describedby="emailHelp" placeholder="請輸入密碼!!">
+          </div>            
+        </form>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal" class="mr-auto">已經有帳號!</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">確認</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- carousel -->
+
+<section> 
+
+<!-- <div class="container"> -->
+  <!-- <div class="col-md-12">  -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active bg-cover" style="background-image: url(images/onepage01.jpg);    height: 400px;">
+      
+       <div class="carousel-caption d-none d-md-block">
+         <h5>I love you more than I need you!</h5>
+         <p>Life goes not backward nor tarries with yesterday</p>
+       </div>
+    </div>
+    <div class="carousel-item  bg-cover" style="background-image: url(images/onepage02.jpg);   height: 400px;">
+      <img class="d-block w-100" src="images/onepage01.jpg" alt="Second slide">
+       <div class="carousel-caption d-none d-md-block">
+       <h5>I love you more than I need you!</h5>
+       <p>Life goes not backward nor tarries with yesterday</p>
+     </div>
+    </div>
+    <div class="carousel-item bg-cover" style="background-image: url(images/onepage03.jpg);   height: 400px;">
+      <img class="d-block w-100" src="images/onepage02.jpg" alt="Third slide">
+     <div class="carousel-caption d-none d-md-block">
+     <h5>I love you more than I need you!</h5>
+     <p>Life goes not backward nor tarries with yesterday</p>
+     </div>      
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  <!-- </div> -->
+<!-- </div> -->
+</section>
+
+<!-- slogan -->
+
+<section class="bg-info"> 
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <i class="far fa-address-book fa-5x"></i>
+      <h3>OPINION</h3>
+      <p> You are the only one!</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fas fa-air-freshener fa-5x"></i>
+      <h3>ART</h3>
+      <p> Artist's March to Freedom!</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fab fa-affiliatetheme fa-5x"></i>
+      <h3>VIDEO</h3>
+      <p> You are the only one!</p>
+    </div>
+  </div>
+</div>
+
+
+
+</section>
+<!-- processing -->
+<section class="bg-light py-3" style="position: relative;"> 
+  <div class="row"> 
+      <div class="col-md-5 bg-cover" style="background-image: url(images/onepage01.jpg);position: absolute; top: 0; bottom: 0;">  
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-md-7 container-p"> 
+       <h2>The world's most beautiful island. 
+        </h2>
+        <p>Warm weath </p>
+        <p>kind-hearted people</p>
+        <a href="#" class="btn btn-outline-info">more information</a>
+        <div class="row">
+          <div class="col-md-6">  
+          <h2>You've gonna loving this island! </h2>
+          <p>You've got the touch!</p>
+        </div>
+          <div class="col-md-6">
+            <h2>You've got moved!  </h2>
+             <p>You've got sweet memories from this island!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- project -->
+
+  <!-- 主要產品介紹 -->
+  <section class="bg-light py-3">
+    <div class="container mt-3">
+      <div class="row justify-content-center">
+        <h1 class="font-weight-bold">back home with a seed and a piece of leave in pocket</h1>
+        <div class="col-md-6 d-flex mt-3">
+          <div class="mr-3">
+           <i class="fas fa-music fa-5x"></i>
+          </div>
+          <div>
+            <h2 class="font-weight-bold">Moved by music from radio</h2>
+            <p>stay home with favorate background music </p>
+          </div>  
+        </div>
+        <div class="col-md-6 d-flex mt-3">
+          <div class="mr-3">
+            <i class="fas fa-book-reader fa-5x"></i>
+          </div>
+          <div>
+            <h2 class="font-weight-bold">read books you want to read</h2>
+            <p>happy to read books with a cup of coffee by side</p>
+          </div>  
+        </div>
+        <div class="col-md-6 d-flex mt-3">
+          <div class="mr-3">
+            <i class="fas fa-cookie-bite  fa-5x"></i>
+          </div>
+          <div>
+            <h2 class="font-weight-bold">make some delicious food you like</h2>
+            <p>tasty food makes you happy</p>
+          </div>  
+        </div>
+        <div class="col-md-6 d-flex mt-3">
+          <div class="mr-3">
+           <i class="fas fa-biking fa-5x"></i>
+          </div>
+          <div>
+            <h2 class="font-weight-bold">ride a bike to get some positive energy</h2>
+            <p>good for you to do some sports</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- 左边文字右边图片 -->
+ <section class="bg-light py-3" style="position: relative;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 container-p" style="z-index: 10">
+<!--          <div class="row justify-content-center">
+            <h1>東西咱們新聞教學我們</h1>
+            <p>資格降價高考全市他在由於地圖我來準確參與轎車望，福建我愛尤其是多次大學，彩色互。</p>
+            <div class="col-md-3">
+              <p>過去奇怪目前不出到了</p>
+              <p>平衡士兵這時希望</p>
+              <p>引導回憶日子當中導致。</p>
+              <p>現場還不不上班</p>
+            </div>
+            <div class="col-md-9">
+              <p>性能也就是售價出租沒想到至少，供求早就打印青年。</p>
+              <p>漢化的說新鮮傷心去了非常答被留在矛盾三個，不但。</p>
+              <p>讓你很大忘記聯想多次求職廠家關，錄入教材回來承諾這款妹，細。</p>
+              <p>輕易網遊禮物居民海外語音特性正是最大手裡吸。</p>
+            </div>
+          </div> -->
+
+            <dl class="row">
+              <dd class="col-sm-9">season</dd>
+              <dt class="col-sm-3 text-truncate">good season </dt>
+
+              <dt class="col-sm-3">Spring</dt>
+              <dd class="col-sm-9">
+                <p>green, many plants turn to green.</p>
+                <p>leaves are green</p>
+              </dd>
+
+              <dt class="col-sm-3">Summer</dt>
+              <dd class="col-sm-9">summer time, hot and easy to do some sports</dd>
+
+              <dt class="col-sm-3 text-truncate">Autumn   </dt>
+              <dd class="col-sm-9 ">yellow, leaves turn to yellow, it is a time for harvest.</dd>
+
+              <dt class="col-sm-3">Winter</dt>
+              <dd class="col-sm-9">
+                <dl class="row">
+                  <dt class="col-sm-4">Nested it is cold outside</dt>
+                  <dd class="col-sm-8">It is cold outside and I will take you home.</dd>
+                </dl>
+              </dd>
+            </dl>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-md-6 bg-cover" style="background-image: url(images/onepage01.jpg);
+      position: absolute;
+      top: 0;
+      bottom: 0;"></div>
+    </div>
+  </section>
+
+<!-- map -->
+<section class="bg-light py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.036604896568!2d120.60798085105193!3d24.170448984307363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e0518bfe79d%3A0x84d666d742e36d4c!2zNDA35Y-w5Lit5biC6KW_5bGv5Y2A5bel5qWt5Y2A5LiA6LevMTAw6Jmf!5e0!3m2!1szh-TW!2stw!4v1571194043607!5m2!1szh-TW!2stw" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+      <div class="col-md-6">
+        <form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name">
+   </div>
+   <div id="err_name"></div>
+  <div class="form-group">
+    <label for="text">Phone</label>
+    <input type="phone" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Enter phone number">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+  </div>
+  <div id="err_phone"></div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="number">Number</label>
+    <input type="number" class="form-control" id="number" placeholder="Enter number">
+  </div>
+  <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                vegetarian food
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                not vegetarian food
+              </label>
+            </div>
+  <div class="text-right mt-3"><button type="submit" class="btn btn-outline-primary">cancel</button>
+  <button type="submit" class="btn btn-primary">submit</button></div>
+</form>
+      </div>
+    </div>
+  </div>
+  
+</section>
+<!-- join us -->
+<section class="bg-light py-3">
+  <div class="container-fluid container-p">
+    <div class="row">
+      <div class="col-md-6 " style="background-image: url(images/onepage02.jpg); height: 280px">
+        <small>Join us</small>
+        <h1>flower waiting for insects silently...</h1>
+        <p>flower waiting for insects silently in the air</p>
+        <a href="#" class="btn btn-primary">Join us</a>
+      </div>
+      <div class="col-md-6" style="background-image: url(images/onepage02.jpg); height: 280px">
+        <small>Join us</small>
+        <h1>flower waiting for insects silently...</h1>
+        <p>flower waiting for insects silently in the air</p>
+        <a href="#" class="btn btn-primary">Join us</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer class="bg-light py-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">© Shirley's learning life from 20190527 to 20191111</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Facebook</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Line</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">learningonline</a>
+  </li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+  
+
+</footer>
+
+
+
+
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      var flag_name = false;
+      var flag_phone = false;
+      $(function(){
+        $("#name").bind("input propertychange",function(){
+          if ($("#name").val().length<3){
+            flag_name = false;
+            $("#err_name").html("Name requires three or more characters.");
+            $("#err_name").css("color","red");
+          } else if($("#name").val().length > 5) {
+            flag_usr = false;
+            $("#err_name").html("Name requires less than five characters.");
+            $("#err_name").css("color","red");
+          } else {
+            flag_usr = true;
+            $("#err_name").html("");   
+          }
+        });
+
+        $("#phone").bind("input propertychange",function(){
+          if ($("#phone").val().length !=10){
+            flag_phone = false;
+            $("#err_phone").html("Phone number requires ten characters!");
+            $("#err_phone").css("color","red");
+          
+          } else {
+            flag_phone = true;
+            $("#err_phone").html("");   
+          }
+        });
+
+        $("#ok_btn").bind("click",function(){
+          if(flag_usr && flag_phone){
+            alert("姓名、電話格式正確!!");
+          } else {
+            alert("姓名、電話格式錯誤!!");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>	
